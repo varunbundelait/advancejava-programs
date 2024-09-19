@@ -1,0 +1,23 @@
+package com.nit.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class MetaDataResultSet {
+
+	
+	private static String URL="jdbc:musql://loaclhost:3306:test1";
+	private static String USER="root";
+	private static String PASS="root";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try(Connection con=DriverManager.getConnection(URL, USER, PASS)){
+			System.out.println("database is connected");
+		}
+		catch(Exception ex) {
+			System.out.println(ex);
+		}
+
+	}
+
+}

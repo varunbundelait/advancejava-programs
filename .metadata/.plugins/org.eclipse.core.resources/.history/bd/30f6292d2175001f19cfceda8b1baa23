@@ -1,0 +1,5 @@
+package com.nit.jdbc;
+
+public class CallableProcedureTB {
+
+}
